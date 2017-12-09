@@ -43,6 +43,7 @@ class ProfileController extends Controller
         // form data
         $data = $request->all();
         $user->update($data);
-        return $user;
+        return redirect(route('profile.edit', ['user' => $user]))
+                ->with('info', 'Your profile has been updated successfully.');
     }
 }
