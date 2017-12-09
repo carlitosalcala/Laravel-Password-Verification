@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests\UpdateProfile;
 
+use App\User;
+
 class ProfileController extends Controller
 {
     public function __construct()
